@@ -1,0 +1,18 @@
+name: ArithiaProperties
+main: com.arithia.ap.ArithiaProperties
+version: Beta[non-full version]
+depends: [WorldGuard, WorldEdit, Vault]
+commands:
+  ap:
+    description: /ap <command> <commandargs> Use </ap help> for help
+    usage: /ap <command> <commandargs> Use </ap help> for help
+    aliases: [arithiaproperties, aproperties, arithiap]
+permissions:
+  ap.admin:
+    description: Gives access to admin things in arithia properties
+    default: op
+    children:
+      ap.player: true
+  ap.player:
+    description: Gives access to all player things in Arithia Properties
+    default: op
